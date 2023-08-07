@@ -1,8 +1,9 @@
 import { Server } from 'socket.io'
 
-const io = new Server(9000, {
+const PORT = 9000
+const io = new Server(PORT, {
   cors: {
-    origin: "http://localhost:3001"
+    origin: "https://whatsapp-5kzx.onrender.com"
   }
 })
 
